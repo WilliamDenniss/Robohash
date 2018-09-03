@@ -35,6 +35,18 @@ Usage
     with open("path/to/new/file.png", "w") as f:
         rh.img.save(f, format="png")
 
+Docker
+------
+
+Running the web frontend with Docker:
+
+.. code:: bash
+
+    $ docker build -t robohash .
+    $ docker run -it -p 22655:80 robohash
+
+Then browse to http://localhost:22655
+
 Robosets
 --------
 
